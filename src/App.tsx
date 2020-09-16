@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import svg from './icons/hammer.svg';
 
 interface AppProps {}
 
@@ -8,8 +9,9 @@ function App({}: AppProps) {
     <div className="nc">
       <header className="nc-header">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Site is under heavy construction at the moment. Please come back later :)
         </p>
+        <p><img id="under-construction" src={svg} alt="Under Construction"/></p>
       </header>
     </div>
   );
