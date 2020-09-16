@@ -5,8 +5,8 @@ interface AppProps {}
 
 function App({}: AppProps) {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="nc">
+      <header className="nc-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
