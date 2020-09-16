@@ -3,7 +3,10 @@
 
 declare module '*.css';
 declare module '*.svg' {
-  const ref: string;
+  const ref: React.RefForwardingComponent<
+    SVGSVGElement,
+    React.SVGAttributes<SVGSVGElement>
+  >;
   export default ref;
 }
 declare module '*.bmp' {
