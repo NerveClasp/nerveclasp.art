@@ -5,7 +5,9 @@
     "test": "jest",
     "watch": "jest --watch",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "predeploy": "yarn test",
+    "deploy": "yarn build && firebase deploy"
   },
   "dependencies": {
     "react": "^16.13.1",
