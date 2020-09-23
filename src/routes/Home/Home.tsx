@@ -10,9 +10,8 @@ interface IHome {
 }
 
 function Home({ className, path }: IHome) {
-  console.log('path home', path);
-
   useUpdatePath(path);
+
   return (
     <div className={cx(className)}>
       Home

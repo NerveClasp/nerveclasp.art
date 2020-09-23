@@ -8,13 +8,15 @@
     "test": "jest",
     "watch": "jest --watch",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint src && prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint-fix": "eslint src --fix",
     "svgo": "svgo --config=./.svgo.json",
     "predeploy": "yarn test",
     "deploy": "yarn build && firebase deploy"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
       "prettier --write"
     ],
     "*.{json,md,scss,css,yaml,yml}": [
@@ -46,6 +48,16 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/snowpack-env": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "husky": "^4.3.0",
     "jest": "^26.2.2",
     "lint-staged": "^10.4.0",

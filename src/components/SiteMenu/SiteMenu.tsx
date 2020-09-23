@@ -17,7 +17,6 @@ function SiteMenu({ className, links }: ISiteMenu) {
   React.useEffect(() => {
     setShowBack(!!path && path !== '/');
   }, [path]);
-  console.log('path', path);
 
   return (
     <div className={cx(className, 'nc-site-menu')}>
@@ -26,7 +25,7 @@ function SiteMenu({ className, links }: ISiteMenu) {
           key={label}
           to={to}
           className={cx('nc-site-menu__link', {
-            ['nc-site-menu__link--current']: to === path,
+            'nc-site-menu__link--current': to === path,
           })}
         >
           {label}
