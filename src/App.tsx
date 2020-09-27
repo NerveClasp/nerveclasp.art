@@ -1,12 +1,6 @@
 import React from 'react';
 import Recoil from 'recoil';
-import {
-  Router,
-  useLocation,
-  createHistory,
-  createMemorySource,
-  LocationProvider,
-} from '@reach/router';
+import { Router } from '@reach/router';
 import { Home, About, NotFound } from './routes';
 import { SiteMenu } from './components';
 import './App.css';
@@ -18,7 +12,7 @@ const routes = [
   { label: 'About', to: '/about', Route: About },
 ];
 
-function App({}: AppProps) {
+function App(_props: AppProps) {
   return (
     <Recoil.RecoilRoot>
       <div className="nc">
