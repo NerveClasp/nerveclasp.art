@@ -1,0 +1,27 @@
+{
+  "name": "@nerveclasp/next-client",
+  "version": "0.0.1",
+  "description": "nerveclasp.art Next.js client",
+  "author": "NerveClasp",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "date-fns": "^2.24.0",
+    "gray-matter": "^4.0.3",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remark": "^14.0.1",
+    "remark-html": "^14.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.3",
+    "@types/react": "^17.0.21",
+    "typescript": "^4.4.3"
+  }
+}

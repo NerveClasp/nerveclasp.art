@@ -2,26 +2,14 @@
 
 ## [WIP]
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+### Lerna + Yarn setup
 
-## Available Scripts
+Initialized the setup mostly following [this article](https://medium.com/@jsilvax/a-workflow-guide-for-lerna-with-yarn-workspaces-60f97481149d)
 
-### npm start
+```bash
+yarn config set workspaces-experimental true && yarn init && yarn add lerna --dev && lerna init
+```
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+### Next JS client
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### npm test
-
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
-
-### npm run build
-
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" or "@snowpack/plugin-parcel" to your `snowpack.config.json` config file.
+Just followed the [setup tutorial](https://nextjs.org/learn/basics/create-nextjs-app/setup) but instead of `leran-starter` template used `typescript-final`
