@@ -1,15 +1,30 @@
 .container {
-  max-width: 36rem;
+  max-width: 1360px;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  margin: 0 auto 3rem;
 }
 
 .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+.topMenu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 30vw;
+  justify-content: space-between;
+}
+
+.topMenuItem {
+  margin: 8px 32px;
+  font-weight: 400;
+  font-size: 24px;
 }
